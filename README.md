@@ -1,7 +1,7 @@
 # docker_comfyui
 comfyuiをDockerで立てる方法  
 画像生成をするときに便利なComfyUIを、Dockerで立てておいてすぐに使える環境にする。  
-自分のPCから、sshでサーバーに繋いで、サーバー上でcomfyuiをdockerで立てると、ポートのつながりを考える必要があるので、とても勉強になります。(図を載せる)
+自分のPCから、sshでサーバーに繋いで、サーバー上でcomfyuiをdockerで立てると、ポートのつながりを考える必要があるので、とても勉強になります。(図を載せる)  
 Dockerで立てなくても、Githubから取ってきて、`python main.py`を実行するとComfyUIを動かすことができる。  
 ComfyUIのGithub : https://github.com/comfyanonymous/ComfyUI.git
 ## やり方　その１  
