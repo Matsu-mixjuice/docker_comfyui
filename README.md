@@ -17,7 +17,7 @@ ComfyUIのGithub : https://github.com/comfyanonymous/ComfyUI.git
    `sudo docker build -t ◯◯◯`
    ◯◯◯にイメージ名をつける
 3. コンテナの起動  
-   `sudo docker run -d -p ◯◯◯◯:◯◯◯◯ -name ◯◯◯`  
+   `sudo docker run --gpus all -d -p ◯◯◯◯:◯◯◯◯ -name コンテナ名 イメージ名`  
    -d　　detached モード(バックグラウンドで実行)  
    -p ホスト:コンテナ　　ポート番号のマッピング。ホストのポートをコンテナのポートに接続する。  
    -name ◯◯◯  コンテナにわかりやすい名前をつける  
