@@ -4,11 +4,19 @@ comfyuiをDockerで立てる方法
 Dockerで立てなくても、Githubから取ってきて、`python main.py`を実行するとComfyUIを動かすことができる。  
 ComfyUIのGithub : https://github.com/comfyanonymous/ComfyUI.git
 ## やり方　その１  
-1. Dockerfileを作る。
+1. Dockerfileを作る。  
+   Dockerfileの構成  
+   ①ベースイメージを指定  
+   ②作業ディレクトリの作成と設定  
+   ③ホストのファイルをコンテナにコピー  
+   ④依存関係のインストール  
+   ⑤必要なポートを指定  
+   ここのポート指定の役割：「このポートを使う予定ですよ」と情報を開示する。(ここでポートが開いたわけではない。)  
+   ⑥コンテナ起動時に実行されるコマンド
 2. Dockerイメージをビルドする。  
    `sudo docker build -t ◯◯◯`
    ◯◯◯にイメージ名をつける
-4. コンテナの起動  
+3. コンテナの起動  
    `sudo docker run -d -p ◯◯◯◯:◯◯◯◯ -name ◯◯◯`  
    -d　　detached モード(バックグラウンドで実行)  
    -p ホスト:コンテナ　　ポート番号のマッピング。ホストのポートをコンテナのポートに接続する。  
