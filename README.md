@@ -25,7 +25,7 @@ ComfyUIのGithub : https://github.com/comfyanonymous/ComfyUI.git
 docker composeでコンテナを作る。  
 何が嬉しい？：複数コンテナを管理するための設定ができる。  
 1. Dockerfileを作る。  
-2. docker_compose.ymlファイルを作る。  
+2. docker-compose.ymlファイルを作る。  
    .ymlファイル内でイメージ作成について記述する。 
 4. `docker-compose up -d`をしたらOK
 
