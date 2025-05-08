@@ -16,9 +16,18 @@ ComfyUIのGithub : https://github.com/comfyanonymous/ComfyUI.git
 2. Dockerイメージをビルドする。  
    `sudo docker build -t ◯◯◯`
    ◯◯◯にイメージ名をつける
-3. コンテナの起動  
+3. コンテナの起動。  
    `sudo docker run --gpus all -d -p ◯◯◯◯:◯◯◯◯ -name コンテナ名 イメージ名`  
    -d　　detached モード(バックグラウンドで実行)  
    -p ホスト:コンテナ　　ポート番号のマッピング。ホストのポートをコンテナのポートに接続する。  
    -name ◯◯◯  コンテナにわかりやすい名前をつける  
 ## やり方 その2  
+docker composeでコンテナを作る。  
+何が嬉しい？：複数コンテナを管理するための設定ができる。  
+1. Dockerfileを作る。  
+2. docker_compose.ymlファイルを作る。  
+   .ymlファイル内でイメージ作成について記述する。 
+4. `docker-compose up -d`をしたらOK
+
+
+※GPUの設定に関してエラーが出る可能性がある。DockerでGPUが使えるように設定する必要がある。
