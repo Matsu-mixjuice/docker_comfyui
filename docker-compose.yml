@@ -5,7 +5,7 @@ services:  # サービスの定義
     build: .  # Dockerfileからビルドする場合
     image: docker_image_latest  # ビルド後に使用するイメージ名
     ports:  # ポート設定
-      - "7777:7777"  # ホストのポート 8188 をコンテナのポート 8188 にマッピング
+      - "7777:7777"  # ホストのポート 7777 をコンテナのポート 7777 にマッピング
     environment:  # 環境変数の設定（必要な場合）
       - NVIDIA_VISIBLE_DEVICES=all  # すべてのGPUをコンテナで使用
     runtime: nvidia  # NVIDIA GPUを使用するための設定
